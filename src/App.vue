@@ -34,7 +34,7 @@
     
     <footer>
       <div class="footer-container" v-if="!hideDiv">
-        <span class="footer-title">Powered By</span>
+        <span class="footer-title">Made With <img src="./assets/heart-icon.svg" alt="">by Karl Crisostomo</span>
 
         <div class="ft-img-con">
           <img class="stack-img-1" src="./assets/vuejs-icon.svg" alt="" />
