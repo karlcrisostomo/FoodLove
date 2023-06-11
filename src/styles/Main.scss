@@ -15,6 +15,11 @@
             display: flex;
             margin: auto;
             padding: 0;
+
+            &:hover {
+                font-weight: bold;
+                transition: font-weight 300ms ease-in-out;
+            }
         }
 
         .title {

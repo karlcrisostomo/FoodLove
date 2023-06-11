@@ -17,6 +17,10 @@
   margin: auto;
   padding: 0;
 }
+.Home .navbar .router-link:hover {
+  font-weight: bold;
+  transition: font-weight 300ms ease-in-out;
+}
 .Home .navbar .title {
   font-weight: bold;
 }
