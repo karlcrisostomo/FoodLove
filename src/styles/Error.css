@@ -1,0 +1,47 @@
+.error-container {
+  padding: 1em;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  transform: translateY(30%);
+  background-color: rgb(241, 238, 238);
+}
+.error-container .error-content {
+  transform: translateY(30%);
+  line-height: 1.5rem;
+}
+.error-container .chef-img {
+  width: 30%;
+}
+.error-container .error-btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 1.3em;
+  border-radius: 2em;
+  background-color: rgb(108, 236, 102);
+}
+.error-container .error-btn:hover {
+  scale: 110%;
+  transition: scale 300ms ease-in;
+  background: none;
+  font-weight: bold;
+  transition: background 500ms ease-out;
+  border: 4px dotted rgb(108, 236, 102);
+}
+
+@media (max-width: 600px) {
+  .error-container {
+    display: flex;
+    justify-content: center;
+    transform: translateY(50%);
+    height: 400px;
+  }
+  .error-container .error-content {
+    transform: none;
+    transform: translateY(30%);
+  }
+  .error-container .chef-img {
+    display: none;
+  }
+}/*# sourceMappingURL=Error.css.map */

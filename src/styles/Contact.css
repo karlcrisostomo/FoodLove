@@ -1,0 +1,44 @@
+.contact-container .contact-section {
+  margin: auto;
+  margin-top: 5em;
+  max-width: 600px;
+  padding: 1em;
+}
+.contact-container .contact-section #fname {
+  width: 100%;
+  height: 2em;
+}
+.contact-container .contact-section #lname {
+  width: 100%;
+  height: 2em;
+}
+.contact-container .contact-section #email {
+  width: 100%;
+  height: 2em;
+}
+.contact-container .contact-section .text-container #textArea {
+  width: 100%;
+  height: 200px;
+  resize: none;
+}
+.contact-container .contact-section .submit-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-container .contact-section .submit-container .submit-cta {
+  margin-top: 1em;
+  width: 300px;
+  padding: 1em;
+  border: none;
+  background-color: rgb(108, 236, 102);
+  border-radius: 2.5em;
+  font-size: 1em;
+  cursor: pointer;
+}
+.contact-container .contact-section .submit-container .submit-cta:hover {
+  background: none;
+  transition: background 350ms ease-in;
+  border: 4px dotted rgb(108, 236, 102);
+  font-weight: bold;
+}/*# sourceMappingURL=Contact.css.map */
