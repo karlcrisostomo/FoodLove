@@ -1,8 +1,13 @@
-import { ref, onMounted } from 'vue';
+import { ref, computed } from "vue";
+import { useRoute } from "vue-router";
 
 export default {
   setup() {
-    const isMenuOpen  = ref(false);
+    const isMenuOpen = ref(false);
+    const route = useRoute();
+    const hideDiv = computed(() => {
+      return route.name === "error";
+    });
 
     const toggleMenu = () => {
       isMenuOpen.value = !isMenuOpen.value;
@@ -10,7 +15,9 @@ export default {
 
     return {
       isMenuOpen,
-      toggleMenu
+      toggleMenu,
+
+      hideDiv,
     };
-  }
+  },
 };

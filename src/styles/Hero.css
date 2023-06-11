@@ -102,7 +102,6 @@
 }
 @media (max-width: 650px) {
   .recipe-section {
-    background-color: rgb(241, 238, 238);
     border-radius: 2em 2em 0 0;
   }
   .recipe-section .slanted-text {

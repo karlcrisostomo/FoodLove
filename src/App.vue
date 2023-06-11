@@ -31,13 +31,14 @@
   <router-view />
 
   <section class="footer-section">
+    
     <footer>
-      <div>
-        <span>Powered By</span>
+      <div class="footer-container" v-if="!hideDiv">
+        <span class="footer-title">Powered By</span>
 
-        <div>
-          <img src="./assets/vuejs-icon.svg" alt="" />
-          <img src="./assets/Axios_logo_(2020).svg" alt="" />
+        <div class="ft-img-con">
+          <img class="stack-img-1" src="./assets/vuejs-icon.svg" alt="" />
+          <img class="stack-img-2" src="./assets/Axios_logo_(2020).svg" alt="" />
         </div>
       </div>
     </footer>

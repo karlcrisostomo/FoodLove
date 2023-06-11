@@ -25,6 +25,29 @@
     font-family: Poppins;
 }
 
+.footer-section {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .footer-container {
+        .footer-title {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2em;
+        }
+        .ft-img-con {
+            .stack-img-1 {
+                width: 80px;
+            }
+            .stack-img-2 {
+                transform: translateY(-30px);
+                width: 100px;
+            }
+        }
+    }
+}
+
 li {
     list-style: none;
     display: inline-block;
@@ -45,6 +68,9 @@ li {
 }
 
 @media (max-width: 460px) {
+    .footer-container {
+        height: 100px;
+    }
     .navbar {
         .router-link {
             color: white;
@@ -84,14 +110,11 @@ li {
         }
         .hamburger span:nth-child(2) {
             opacity: 0;
-           
-            
         }
         .hamburger span:nth-child(3) {
             transform: rotate(-45deg) translate(5px, -5px);
-              transition: transform 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out;
         }
-        
     }
 
     .navList {

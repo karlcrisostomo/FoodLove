@@ -1,0 +1,124 @@
+.Home {
+  margin: 0;
+  font-family: Poppins;
+}
+.Home .navbar {
+  color: white;
+  background-image: linear-gradient(to left bottom, #4eebb4, #42de92, #40d06d, #46c244, #4eb300);
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Home .navbar .router-link {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  margin: auto;
+  padding: 0;
+}
+.Home .navbar .title {
+  font-weight: bold;
+}
+
+.footer-section {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-section .footer-container .footer-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.footer-section .footer-container .ft-img-con .stack-img-1 {
+  width: 80px;
+}
+.footer-section .footer-container .ft-img-con .stack-img-2 {
+  transform: translateY(-30px);
+  width: 100px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 0.5em;
+}
+
+.hamburger {
+  display: none; /* Hide the hamburger menu by default on tablet/desktop */
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 460px) {
+  .footer-container {
+    height: 100px;
+  }
+  .navbar .router-link {
+    color: white;
+  }
+  .navbar .title {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  .navbar .router-link {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    color: white;
+  }
+  .hamburger {
+    display: block; /* Show the hamburger menu in mobile mode */
+    position: absolute;
+    right: 1em;
+    top: 1.5em;
+  }
+  .navCon-open {
+    z-index: 1;
+    background-image: linear-gradient(to left bottom, #4eebb4, #42de92, #40d06d, #46c244, #4eb300);
+    height: 100vh;
+    width: 60%;
+    position: fixed;
+    padding: 1em;
+    top: 0em;
+    right: 0;
+  }
+  .navCon-open .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: transform 0.3s ease-in-out;
+  }
+  .navCon-open .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+  .navCon-open .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: transform 0.3s ease-in-out;
+  }
+  .navList {
+    display: none;
+  }
+  .navList.show {
+    margin-top: 2em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 600px) {
+  .router-link {
+    color: black;
+  }
+  .Home {
+    margin: auto;
+    max-width: 1000px;
+  }
+}/*# sourceMappingURL=Main.css.map */
