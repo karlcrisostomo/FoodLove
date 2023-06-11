@@ -81,7 +81,7 @@
       </article>
 
       <div id="error-message" v-if="errorMessage">
-        <h1>An error occurred. Please try again later</h1>
+        <h1 style="text-align: center;">An error occurred. Please try again later</h1 >
       </div>
     </div>
   </div>
