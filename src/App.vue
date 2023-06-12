@@ -6,7 +6,7 @@
 
 <template>
   <nav class="navbar">
-    <span @click="toggleHome" class="title">FOODLOVE</span>
+    <span class="title">FOODLOVE</span>
 
     <div :class="['navCon', { 'navCon-open': isMenuOpen }]">
       <div class="hamburger" @click="toggleMenu">
