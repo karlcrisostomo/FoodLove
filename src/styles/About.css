@@ -11,10 +11,13 @@
 }
 .about-container .main-content .title-content {
   transform: translateY(15%);
+}
+.about-container .main-content .title-content .mp-content {
   text-align: justify;
 }
 .about-container .main-content .title-content .main-title {
-  font-size: 2em;
+  font-size: 1.5em;
+  text-align: left;
 }
 .about-container .feature-container {
   padding: 1em;
@@ -41,5 +44,10 @@
   }
   .about-container .feature-container .feature-title {
     font-size: 2em;
+  }
+}
+@media (max-width: 750px) {
+  .about-container .feature-container {
+    margin-top: 5em;
   }
 }/*# sourceMappingURL=About.css.map */

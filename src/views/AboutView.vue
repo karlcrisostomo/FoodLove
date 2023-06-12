@@ -8,7 +8,7 @@
     <div class="main-content">
       <div class="title-content">
         <h1 class="main-title">Discover a World of Cuisines</h1>
-        <p>
+        <p class="mp-content">
           With our integration of <span style="font-weight: bold;">Spoonacular's</span> extensive database,
           we have curated a diverse collection of dishes from various cuisines
           around the globe. Whether you're craving Italian pasta, spicy Indian

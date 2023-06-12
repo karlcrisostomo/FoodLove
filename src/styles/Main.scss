@@ -3,7 +3,6 @@
     .navbar {
         color: white;
         background-image: linear-gradient(to left bottom, #4eebb4, #42de92, #40d06d, #46c244, #4eb300);
-
         padding: 1em;
         display: flex;
         justify-content: space-between;
@@ -24,6 +23,7 @@
 
         .title {
             font-weight: bold;
+            cursor: pointer;
         }
     }
 
@@ -73,51 +73,67 @@ li {
 }
 
 @media (max-width: 460px) {
+    .Home {
+        margin: 0;
+        .navbar {
+            flex-direction: column;
+            align-items: center;
+            
+            .title{
+                margin-top: .3em;
+                
+            }
+            
+            .navList {
+                align-items: center;
+                padding: 0;
+                margin: 0;
+
+                .router-li {
+                    
+                    width: 103%;
+                    padding: .5em;
+                    &:hover {
+                        background-color: #284933;
+
+                    
+                    }
+                    .router-link {
+                   
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+
     .footer-container {
         height: 100px;
     }
-    .navbar {
-        .router-link {
-            color: white;
-        }
-        .title {
-            font-size: 1.3em;
-            font-weight: bold;
-        }
-        .router-link {
-            display: flex;
-            padding: 0;
-            margin: 0;
 
-            color: white;
-        }
-    }
     .hamburger {
         display: block; /* Show the hamburger menu in mobile mode */
         position: absolute;
         right: 1em;
-        top: 1.5em;
+        top: 1.3em;
     }
 
     .navCon-open {
         z-index: 1;
-        background-image: linear-gradient(to left bottom, #4eebb4, #42de92, #40d06d, #46c244, #4eb300);
-        height: 100vh;
-        width: 60%;
-        position: fixed;
-        padding: 1em;
-        top: 0em;
-        right: 0;
-
+       margin-top: 1em;
+        width: 100%;
+        transition: 300ms ease-in-out;
+        font-size: 1.3em;
         .hamburger span:nth-child(1) {
-            transform: rotate(45deg) translate(5px, 5px);
+            transform: rotate(45deg) translate(1px, 1px);
             transition: transform 0.3s ease-in-out;
         }
         .hamburger span:nth-child(2) {
             opacity: 0;
         }
         .hamburger span:nth-child(3) {
-            transform: rotate(-45deg) translate(5px, -5px);
+            transform: rotate(-45deg) translate(9px, -9px);
             transition: transform 0.3s ease-in-out;
         }
     }
