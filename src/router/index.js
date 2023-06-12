@@ -6,7 +6,7 @@ import Error404Vue from "../views/Error404.vue";
 
 const routes = [
   {
-    path: "/home",
+    path: "/",
     name: "home",
     component: HomeView,
   },
