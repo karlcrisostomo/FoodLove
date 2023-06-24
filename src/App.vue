@@ -6,7 +6,7 @@
 
 <template>
   <nav class="navbar">
-    <span @click="$router.push('/')"  class="title">FOODLOVE</span>
+    <span @click="$router.push('/')"  class="title">Cuisine Explorer</span>
 
     <div :class="['navCon', { 'navCon-open': isMenuOpen }]">
       <div class="hamburger" @click="toggleMenu">
