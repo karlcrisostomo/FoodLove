@@ -1,4 +1,4 @@
-<script src="./script/Home.js"></script>
+<script src="./script/home.js"></script>
 
 <style lang="scss">
 @import url("./styles/Main.scss");
