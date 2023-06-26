@@ -79,10 +79,13 @@
           </div>
         </figure>
       </article>
-
-      <div id="error-message" v-if="errorMessage">
-        <h1 style="text-align: center;">An error occurred. Please try again later</h1 >
-      </div>
+    </div>
+    <div
+      style="text-align: center; height: 50vh; margin-top: 10%"
+      id="error-message"
+      v-if="errorMessage"
+    >
+      <span>"An error occurred. Please try again later."</span>
     </div>
   </div>
 </template>
